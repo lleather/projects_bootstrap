@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Online Atlas Front Page Template</title>
+    <!--add required stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <style>
+        body {
+            height: 100%;
+            padding: 20px;
+            margin: 20px;
+            font-family: Cairo, sans-serif;
+        }
+        .map {
+            padding: 10px;
+        }
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+            opacity: 0.6;
+            background-color: rgba(0, 7, 10, 0.71);
+            transition: .5s ease;
+        }
+        .overlay:hover {
+            opacity: 0.3;
+        }
+        .text {
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .icons i {
+
+            margin: 20px;
+            padding: 20px;
+
+        }
+
+    </style>
+
+    <!--add required javascript-->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Header -->
+    <!--justify-content-center to center columns (col-*) inside row-->
+    <div class="row justify-content-center align-items-center">
+        <a href="#" target="_blank"><img src="img/gppts_180.png"></a>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-12">
+            <h2>Lila Leatherman</h2>
+            <h2>Plants, Maps, and Change</h2>
+            <hr>
+            <h3>Projects</h3>
+        </div>
+    </div>
+
+    <hr>
+    <!--mx-auto for centering inside flex elements-->
+    <div class="row mx-auto text-center">
+
+        <div class="col-md-4 col-lg-4 map">
+            <img src="img/sif_300.png" class="image">
+            <div class="overlay">
+                <div class="text"><h3><a href="https://github.com/lleather/sifviz">Solar-Induced Chlorophyll Fluorescence Mapping</a></h3>
+                    <small>Dynamic web mapping of SIF dynamics</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 map">
+            <img src="img/airports_300.png" class="image">
+            <div class="overlay">
+                <div class="text"><h3><a href="https://lleather.github.io/airportmap/">Airports Map</a></h3>
+                    <small>Demo map of United States Airports</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 map">
+            <img src="img/ecoreg_300.png" class="image">
+            <div class="overlay">
+                <div class="text"><h3><a href="https://github.com/lleather/convert_geojson">US Ecoregion Map</a></h3>
+                    <small>Demo conversion of geospatial formats</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mx-auto text-center">
+
+        <div class="col-md-4 col-lg-4 map">
+            <img src="img/sifts_300.png" class="image">
+            <div class="overlay">
+                <div class="text"><h3><a href="https://github.com/lleather/sif_timeseries">Solar-Induced Chlorophyll Fluorescence Timeseries</a></h3>
+                    <small>Simple interactive SIF timeseries</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 map">
+            <img src="img/ksgpp_300.png" class="image">
+            <div class="overlay">
+                <div class="text"><h3><a href="/">Grassland Carbon Flux</a></h3>
+                    <small>Phenology and productivity of CC3 vs C4 grass - coming soon!</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 map">
+            <img src="img/cp_sdm.png" class="image">
+            <div class="overlay">
+                <div class="text"><h3><a href="/">Species Distribution Modeling for Restoration</a></h3>
+                    <small>Planning restoration using SDMS - corming soon!</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <hr>
+
+    <footer class="container">
+
+        <div class="row justify-content-center align-items-center">
+            <p> Lila Leatherman, Oregon State University, 2018 </p>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+
+
+
+            <a href="https://twitter.com/lila_leatherman" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+            <a href="https://www.linkedin.com/in/lilaleatherman/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i>
+            <a href="https://scholar.google.com/citations?user=kh0H_04AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i>
+
+        </div>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
